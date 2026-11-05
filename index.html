@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wear Flashcards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>wear <span>Korean flashcards</span></h1>
+        <p class="lead">Read the English, then try to say it in Korean. Tap the card to see the answer and hear it.</p>
+      </header>
+
+      <nav class="tabs" id="tabs" aria-label="Choose a level"></nav>
+
+      <section class="study" aria-live="polite">
+        <p class="level-sub" id="levelSub"></p>
+        <p class="progress" id="progress"></p>
+
+        <button type="button" class="card" id="card" aria-label="Flip card">
+          <span class="side" id="side"></span>
+          <span class="text" id="text"></span>
+        </button>
+        <p class="tip">Tap the card to flip · Arrow keys ← → · Space to flip</p>
+
+        <div class="nav">
+          <button type="button" class="btn" id="prev">Previous</button>
+          <button type="button" class="btn" id="listen">🔊 Listen again</button>
+          <button type="button" class="btn primary" id="next">Next</button>
+        </div>
+
+        <div class="tools">
+          <button type="button" class="btn small" id="shuffle">🔀 Shuffle</button>
+          <button type="button" class="btn small" id="reset">Restart</button>
+        </div>
+      </section>
+    </main>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
